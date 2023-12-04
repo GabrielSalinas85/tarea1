@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passowrd</title>
+</head>
+
+<script>
+    function validaPassword()
+    {
+        var op1 = document.getElementById('p1').value;
+        var op2 = document.getElementById('p2').value;
+        var op3 = document.getElementById('p3').value;
+
+        var pass = op1 + op2 + op3;
+        var texto = document.getElementById('txtValida');
+
+        if(pass == "911")
+        {
+            texto.innerHTML = "password 1 correcto";
+           
+        }
+        else
+        {
+            if (pass == "714")
+            {
+                texto.innerHTML = "password 2 es correcto"
+            }
+            else
+            {
+                texto.innerHTML = "password incorrecto";
+            }
+            
+            
+           
+        }
+
+    }
+</script>
+<body>
+   <h1>Ingrese Passowrd</h1> 
+   <table>
+    <tr>
+        <td>
+            <select id="p1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </td>
+        <td>
+            <select id="p2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </td>
+        <td>
+            <select id="p3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button id="btnValida" onclick="validaPassword()" >Verificar</button></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id="txtValida"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+   </table>
+</body>
+</html>

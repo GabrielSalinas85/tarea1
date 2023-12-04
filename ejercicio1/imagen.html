@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen</title>
+</head>
+<style>
+    /*clase imagen click*/
+    .click
+    {
+        border: 2px solid;
+        border-color: red;
+    }
+</style>
+<script>
+    function cambiarBorde()
+    {
+        var imagen = document.getElementById('imagenClick');
+        imagen.classList.toggle('click');
+    }
+</script>
+<body>
+    <img id="imagenClick" src="logo.jpeg" onclick="cambiarBorde()"/>
+
+</body>
+</html>
